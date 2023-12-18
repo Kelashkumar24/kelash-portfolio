@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+.sidebar{
+    position: absolute;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    /* background-image: url(img/i.jpg);
+    background-size: cover; */
+}
+.main-two{
+    height: 100vh;
+    background-color: yellow;
+}
+.Container{
+    display: flex;
+}
+.infoContainer{
+    /* background-color: purple; */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.dev-Info{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Hello{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.Name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.About{
+    font-size: 2em;
+}
+
+.Moreabout{
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+.buttons{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.btn{
+    padding: 9px 10px;
+    border-radius: 22px;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 7px 13px;
+    font-size: 12px;
+    margin: 10px 0;
+}
+.btn:hover{
+    background-color: transparent;
+    color: black;
+    transition: 01s;
+}
+
+.devpic img{
+    height: 60vh;
+}
+.blogContainer{
+    margin:50px 100px;
+}
+
+.Contactform{
+   margin: 100px;
+}
+
+.Contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.Contactform form div input{
+    padding: 3px;
+    margin: 6px 0 0 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* width: 26vw; */
+}
+.Contactform form{
+    margin: 0 40px;
+}
+#emailHelp{
+    font-size: 11px;
+    color: rgb(52, 52, 83);
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+.blogItem{
+    margin: 20px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 23px;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    margin: 23px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.Intro{
+    margin:60px 100px;
+}
+.Intro h2{
+    margin: 12px;
+} 
+.Intro p{
+    margin: 12px;
+}
+.skilContainer{
+    padding: 12px;
+}
+.skillItem{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.skill{
+    font-weight: 900;
+    width: 300px;
+    height: 17px;
+    border: 1px solid rgb(78, 131, 142);
+    border-radius: 10px;
+    background-color: white;
+}
+.hundred{
+    width: 400px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 10px;
+}
+.Eighteen{  
+    width: 300px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 10px;
+}
+.Sixteen{
+    width: 250px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 10px;
+}
+.Fourteen{
+    width: 180px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 10px;
+}
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+
+}
+.cross{
+    border-radius: 3px;
+    background-color: yellow;
+    margin-left: 120px;
+    padding-top: 2px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 59, 59);
+    height: 60px;
+    color: white;
+}
+
+@media (max-width: 1101px) { 
+    *{
+        background-color: yellow;
+    }
+    .sidebar nav li a{
+        color: black;
+    }
+    .buttons{
+        font-size: 4px;
+    }
+    .dev-Info{
+        font-size: 10px;
+    }
+    .devpic{
+        display: none;
+    }
+    .Intro, .blogContainer, .Contactform{
+        margin: 50px 8px;
+    }
+   
+    
+}
